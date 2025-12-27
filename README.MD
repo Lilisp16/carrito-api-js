@@ -1,4 +1,4 @@
-#💎 Joyería Online LS
+💎 Joyería Online LS
 
 
 ![Vista previa del proyecto](./img/img.jpg)
