@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Joyería Online LS</title>
+</head>
+<body class="">
+
+<div class="container  mx-auto px-10 pt-4 mb-6">
+
+<!-- Header - Navbar -->
+<div class="flex items-center justify-between p-4 bg-white shadow  sticky top-0">
+  <!-- Menú -->
+  <ul class="flex gap-4">
+    <a href="#hero"><li class="cursor-pointer hover:text-indigo-500">Inicio</li></a>
+   <a href="#productos"> <li class="cursor-pointer hover:text-indigo-500">Productos</li></a>
+  </ul>
+
+  <!-- Botón de carrito -->
+  <button id="btn-carrito" 
+          class="bg-indigo-500 text-white w-8 h-8 flex items-center justify-center rounded-full hover:bg-indigo-600 relative">
+    🛒
+    <span id="contador-carrito" 
+          class="absolute -top-1 -right-1 bg-red-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
+      0
+    </span>
+  </button>
+</div>
+
+
+<!-- Hero -->
+<section id="hero" class="bg-cover bg-center h-screen flex items-center justify-center" style="background-image: url('./img/joyeria.jpeg');">
+  <div class="bg-black bg-opacity-50 p-10 rounded text-center">
+    <h1 class="text-5xl font-bold text-white mb-4"> 💎 Joyería Online LS</h1>
+    <p class="text-lg text-gray-200 mb-6">Descubre nuestras joyas exclusivas</p>
+    <a href="#productos" class="bg-indigo-500 text-white px-6 py-3 rounded-full hover:bg-indigo-600 transition">Explorar</a>
+  </div>
+</section>
+  
+
+
+
+
+<!-- Carrito off-canvas -->
+<div id="carrito-panel"
+  class="fixed top-0 right-0 h-full w-80 bg-white shadow-lg
+         transform translate-x-full transition-transform duration-300 flex flex-col z-60">
+
+  <!-- Header -->
+  <div class="p-4 border-b flex justify-between items-center">
+    <h2 class="text-xl font-bold">Carrito</h2>
+    <button id="cerrar-carrito" class="text-gray-500 text-xl">✕</button>
+  </div>
+
+  <!-- CONTENIDO  -->
+  <div id="carrito" class="flex-1 overflow-y-auto p-4">
+    <!-- aquí  productos o mensaje -->
+  </div>
+
+  <!-- FOOTER FIJO  -->
+  <div class="p-4 border-t">
+    <div id="total" class="font-bold text-lg text-indigo-600 mb-2">
+ 
+    </div>
+
+    <button
+      id="vaciar-carrito"
+      class="w-full  text-grey px-4 py-2 rounded hover:bg-red-600">
+      Vaciar carrito
+    </button>
+  </div>
+
+</div>
+
+
+
+
+
+
+    
+
+
+    
+<h1 class="text-3xl font-bold text-center py-10">Productos destacados</h1>
+
+<div id="productos" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6"><!-- productos aqui--></div>
+
+
+<div id="carrito"></div>
+
+
+
+<footer class="text-center text-gray-400 mt-4">
+  @Todos los derechos reservados by Lili
+</footer>
+
+</div>
+
+
+
+
+<script src="api.js"></script>
+<script src="carrito.js"></script>
+<script src="offcanvas.js"></script>
+</body>
+</html>
