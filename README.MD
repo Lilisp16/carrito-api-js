@@ -36,7 +36,7 @@ Los productos se obtienen desde Fake Store API:
 
 https://fakestoreapi.com/products/category/jewelery
 
-🧠 Tecnologías utilizadas
+👩🏽‍💻 Tecnologías utilizadas
 
 HTML5
 
